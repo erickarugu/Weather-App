@@ -77,7 +77,7 @@ if (weatherForecast.status === 200){
      document.getElementById('c3img').src = icon_path;
  
      document.getElementById('c3tmp_min').innerHTML = "Min: "+((parseInt(fObj.list[16].main.temp_min) - 32) * (5/6)).toFixed(2) +" &deg;C";
-     document.getElementById('c3tmp_max').innerHTML = "Max: "+((parseInt(fObj.list[16].main.temp_max) - 32) * (5/6)).toFixed(2); +" &deg;C";
+     document.getElementById('c3tmp_max').innerHTML = "Max: "+((parseInt(fObj.list[16].main.temp_max) - 32) * (5/6)).toFixed(2) +" &deg;C";
      document.getElementById('c3weather').innerHTML = fObj.list[16].weather[0].main+": "+fObj.list[16].weather[0].description;
 	
 } //end if
