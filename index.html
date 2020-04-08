@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nyeri Weather App</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/73d59e42a2.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="./images/weatherLogo.png"></a>
+    </nav>
+
+    <div class="container-fluid mt-5">
+        <div class="d-flex justify-content-center h-100">
+            <div class="searchbar">
+                <input class="search_input" type="text" name="" placeholder="Search City...">
+                <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+        <div class="row m-4 bg-dark justify-content-center desc pt-2 centered">
+            <div class="col-6 text-center text-white">
+                <h2 id="location" class="text-primary">City UT</h2>
+                <hr class="bg-success">
+                <h3 id="weather" class="text-success">Current Conditions</h3>
+                <hr class="bg-warning" style="width: 85%">
+                <h3 id="temperature" class="text-warning">00</h3>
+                <hr class="bg-info" style="width: 65%">
+                <h3 id="desc" class="text-info">A mix of clouds</h3>
+            </div>
+        </div>
+        <div class="row text-center justify-content-center mt-4">
+            <div class="col-md-3 col-sm-6 mb-4 mt-4">
+                <div class="card">
+                    <img id="c1img" src="://www.httpsnation.co.ke/image/view/-/2009896/highRes/588085/-/k4g4r9z/-/Nyeri_pic.jpg"
+                        class="card-img-top" alt="..."><hr class="bg-white">
+                    <div class="card-body">
+                        <h2 class="card-title" id="c1date">Today</h2><hr class="bg-white">
+                        <h3 class="card-text" id="c1tmp_min">Temp</h3>
+                        <p class="card-text" id="c1tmp_max">Temp</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 mt-4">
+                    <div class="card">
+                        <img id="c2img" src="://www.httpsnation.co.ke/image/view/-/2009896/highRes/588085/-/k4g4r9z/-/Nyeri_pic.jpg"
+                            class="card-img-top" alt="..."><hr class="bg-white">
+                        <div class="card-body">
+                            <h2 class="card-title" id="c2date">Today</h2><hr class="bg-white">
+                            <h3 class="card-text" id="c2tmp_min">Temp</h3>
+                            <p class="card-text" id="c2tmp_max">Temp</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 mt-4">
+                        <div class="card">
+                            <img id="c3img" src="://www.httpsnation.co.ke/image/view/-/2009896/highRes/588085/-/k4g4r9z/-/Nyeri_pic.jpg"
+                                class="card-img-top" alt="..."><hr class="bg-white">
+                            <div class="card-body">
+                                <h2 class="card-title" id="c3date">Today</h2><hr class="bg-white">
+                                <h3 class="card-text" id="c3tmp_min">Temp</h3>
+                                <h3 class="card-text" id="c3tmp_max">Temp</h3>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
