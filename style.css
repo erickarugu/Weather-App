@@ -1,14 +1,22 @@
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  body::-webkit-scrollbar-track {
-    background: #1e103a;        /* color of the tracking area */
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: orange;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid #1e103a;  /* creates padding around scroll thumb */
-  }
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e103a;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: orange;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #1e103a;
+    /* creates padding around scroll thumb */
+}
+
 body {
     background: #110031 !important;
 }
@@ -17,12 +25,15 @@ body,
 html,
 .container,
 .row,
-h2,.search_input {
+h2,
+.search_input {
     font-family: 'Indie Flower', cursive;
 }
-.navbar .navbar-brand img{
+
+.navbar .navbar-brand img {
     height: 40px;
 }
+
 .searchbar {
     margin-bottom: auto;
     margin-top: auto;
@@ -66,24 +77,42 @@ h2,.search_input {
     color: white;
     text-decoration: none;
 }
-.row.desc{
+
+.row.desc {
     background: #1e103a !important;
     border-radius: 30px;
 }
-.card{
+
+.card {
     background: #1e103a !important;
     border-radius: 30px !important;
     color: white;
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
-.card:hover{
-    box-shadow: 0px 0px 1px 1px;
+
+.card:hover {
+    box-shadow: 0px 0px 2px 0px;
 }
-.card img{
+
+.card img {
     height: 60px;
     width: 60px;
 }
+
 .centered {
-    float:none;
-    margin:0 auto;
+    float: none;
+    margin: 0 auto;
+}
+
+footer .container .row .col-4 a .fa {
+    font-size: 18px;
+}
+footer .container .row .col-4 a .fa-linkedin {
+    color:  #0072b1;
+}
+footer .container .row .col-4 a .fa-twitter {
+    color: #1da1f2;
+}
+footer .container .row .col-4 a .fa-github {
+    color: white;
 }

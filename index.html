@@ -16,9 +16,10 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#"><img src="./images/weatherLogo.png"></a>
+        <a class="navbar-brand ml-auto" href="#"><img src="./images/weatherLogo.png"></a>
     </nav>
 
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-2">
         <div class="d-flex justify-content-center h-100">
             <div class="searchbar">
                 <input class="search_input" type="text" name="" placeholder="Search City...">
@@ -39,43 +40,77 @@
         <div class="row text-center justify-content-center mt-4">
             <div class="col-md-3 col-sm-6 mb-4 mt-4">
                 <div class="card">
-                    <img id="c1img" src="://www.httpsnation.co.ke/image/view/-/2009896/highRes/588085/-/k4g4r9z/-/Nyeri_pic.jpg"
-                        class="card-img-top" alt="..."><hr class="bg-white">
+                    <img id="c1img"
+                        src="://www.httpsnation.co.ke/image/view/-/2009896/highRes/588085/-/k4g4r9z/-/Nyeri_pic.jpg"
+                        class="card-img-top" alt="...">
+                    <hr class="" style="background: purple">
                     <div class="card-body">
-                        <h2 class="card-title" id="c1date">Today</h2><hr class="bg-white">
-                        <h3 class="card-text" id="c1tmp_min">Temp</h3>
+                        <h2 class="card-title text-primary" id="c1date">Today</h2>
+                        <hr class="bg-success" style="width: 20%">
+                        <p class="card-text" id="c1tmp_min">Temp</p>
                         <p class="card-text" id="c1tmp_max">Temp</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <hr class="bg-warning" style="width: 50%">
+                        <h3 id="c1weather" class="text-info">Conditions</h3>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4 mt-4">
-                    <div class="card">
-                        <img id="c2img" src="://www.httpsnation.co.ke/image/view/-/2009896/highRes/588085/-/k4g4r9z/-/Nyeri_pic.jpg"
-                            class="card-img-top" alt="..."><hr class="bg-white">
-                        <div class="card-body">
-                            <h2 class="card-title" id="c2date">Today</h2><hr class="bg-white">
-                            <h3 class="card-text" id="c2tmp_min">Temp</h3>
-                            <p class="card-text" id="c2tmp_max">Temp</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                <div class="card">
+                    <img id="c2img"
+                        src="://www.httpsnation.co.ke/image/view/-/2009896/highRes/588085/-/k4g4r9z/-/Nyeri_pic.jpg"
+                        class="card-img-top" alt="...">
+                    <hr class="" style="background: purple">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary" id="c2date">Today</h2>
+                        <hr class="bg-success" style="width: 20%">
+                        <p class="card-text" id="c2tmp_min">Temp</p>
+                        <p class="card-text" id="c2tmp_max">Temp</p>
+                        <hr class="bg-warning" style="width: 50%">
+                        <h3 id="c2weather" class="text-info">Conditions</h3>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4 mt-4">
-                        <div class="card">
-                            <img id="c3img" src="://www.httpsnation.co.ke/image/view/-/2009896/highRes/588085/-/k4g4r9z/-/Nyeri_pic.jpg"
-                                class="card-img-top" alt="..."><hr class="bg-white">
-                            <div class="card-body">
-                                <h2 class="card-title" id="c3date">Today</h2><hr class="bg-white">
-                                <h3 class="card-text" id="c3tmp_min">Temp</h3>
-                                <h3 class="card-text" id="c3tmp_max">Temp</h3>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 mt-4">
+                <div class="card">
+                    <img id="c3img"
+                        src="://www.httpsnation.co.ke/image/view/-/2009896/highRes/588085/-/k4g4r9z/-/Nyeri_pic.jpg"
+                        class="card-img-top" alt="...">
+                    <hr class="" style="background: purple">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary" id="c3date">Today</h2>
+                        <hr class="bg-success" style="width: 20%">
+                        <p class="card-text" id="c3tmp_min">Temp</p>
+                        <p class="card-text" id="c3tmp_max">Temp</p>
+                        <hr class="bg-warning" style="width: 50%">
+                        <h3 id="c3weather" class="text-info">Conditions</h3>
                     </div>
+                </div>
+            </div>
 
         </div>
     </div>
+    <footer>
+        <div class="container text-center mt-3">
+            <div class="row text-white">
+                <div class="col">
+                    <p>Coded with <i class="fa fa-heart text-danger"></i> by <a class=""
+                            href="https://erickarugu32.github.io">Eric K </a></p>
+                </div>
+                <div class="col">
+                    <a href="https://github.com/erickarugu32"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/eric-karugu-904569145/"><i
+                            class="fa fa-linkedin ml-4 mr-4"></i></a>
+                    <a href="https://twitter.com/karugu_eric"><i class="fa fa-twitter"></i></a>
+                    <p>&copy;2020</p>
+                </div>
+                <div class="col">
+                    
+                    <p>Data: <a href="https://openweathermap.org/api">OpenWeather API</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
