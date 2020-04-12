@@ -16,7 +16,14 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid #1e103a;
     /* creates padding around scroll thumb */
 }
-
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px rgb(53,59,72) inset !important;
+    box-shadow: 0 0 0 30px rgb(53,59,72) inset !important;
+}
 body {
     background: #110031 !important;
 }
@@ -54,16 +61,20 @@ h2,
     transition: width 0.4s linear;
 }
 
-.searchbar:hover>.search_input {
+.searchbar:hover>.search_input,.searchbar>.search_input:focus {
     padding: 0 10px;
     width: 250px;
     caret-color: red;
     transition: width 0.4s linear;
 }
+.searchbar>.search_input:focus{
+    background: transparent;
+}
 
 .searchbar:hover>.search_icon {
     background: white;
     color: purple;
+    text-decoration: none;
 }
 
 .search_icon {
