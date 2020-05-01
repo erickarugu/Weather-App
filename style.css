@@ -20,7 +20,7 @@ body::-webkit-scrollbar-thumb {
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
+input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px rgb(53,59,72) inset !important;
     box-shadow: 0 0 0 30px rgb(53,59,72) inset !important;
 }
@@ -36,6 +36,8 @@ h2,
 .search_input {
     font-family: 'Indie Flower', cursive;
 }
+
+/* Navigation bar sections */
 
 .navbar .navbar-brand img {
     height: 40px;
@@ -55,15 +57,18 @@ h2,
     border: 0;
     outline: 0;
     background: none;
-    width: 0;
     caret-color: transparent;
     line-height: 40px;
+    padding: 0 10px;
+    width: 250px;
+    caret-color: red;
     transition: width 0.4s linear;
+}
+.search_input::placeholder{
+    color: #fff;
 }
 
 .searchbar:hover>.search_input,.searchbar>.search_input:focus {
-    padding: 0 10px;
-    width: 250px;
     caret-color: red;
     transition: width 0.4s linear;
 }
@@ -87,6 +92,12 @@ h2,
     border-radius: 50%;
     color: white;
     text-decoration: none;
+}
+
+
+/* Cards */
+.hidden{
+    display: none !important;
 }
 
 .row.desc {
@@ -115,6 +126,11 @@ h2,
     margin: 0 auto;
 }
 
+
+/* footer section */
+footer{
+    background: rgba(11, 9, 107, 0.5)
+}
 footer .container .row .col-4 a .fa {
     font-size: 18px;
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,8 +28,8 @@
                 <a href="#" class="search_icon" id="search"><i class="fa fa-search"></i></a>
             </div>
         </div>
-        <div class="row m-4 bg-dark justify-content-center desc pt-2 centered">
-            <div class="col-6 text-center text-white">
+        <div class="row m-3 bg-dark justify-content-center desc pt-2 centered">
+            <div class="col-md-6 text-center text-white">
                 <h2 id="location" class="text-primary"></h2>
                 <hr class="bg-success">
                 <h3 id="weather" class="text-success"></h3>
@@ -40,12 +39,17 @@
                 <h3 id="desc" class="text-info"></h3>
             </div>
         </div>
-        <div class="row text-center justify-content-center mt-4">
+        <div class="hidden" id="loader">
+            <div class="d-flex justify-content-center fa-5x p-5 text-success"><span><i
+                        class="fa fa-spinner fa-pulse"></i></span></div>
+        </div>
+
+        <div class="row text-center justify-content-center mt-4 hidden" id="forecast">
             <div class="col-md-3 col-sm-6 mb-4 mt-4">
                 <div class="card">
                     <img id="c1img"
-                        src="://www.httpsnation.co.ke/image/view/-/2009896/highRes/588085/-/k4g4r9z/-/Nyeri_pic.jpg"
-                        class="card-img-top" alt="...">
+                        src="./images/default.png"
+                        class="card-img-top" alt="default image">
                     <hr class="" style="background: purple">
                     <div class="card-body">
                         <h2 class="card-title text-primary" id="c1date"></h2>
@@ -60,8 +64,8 @@
             <div class="col-md-3 col-sm-6 mb-4 mt-4">
                 <div class="card">
                     <img id="c2img"
-                        src="://www.httpsnation.co.ke/image/view/-/2009896/highRes/588085/-/k4g4r9z/-/Nyeri_pic.jpg"
-                        class="card-img-top" alt="...">
+                        src="./images/default.png"
+                        class="card-img-top" alt="default image">
                     <hr class="" style="background: purple">
                     <div class="card-body">
                         <h2 class="card-title text-primary" id="c2date"></h2>
@@ -76,8 +80,8 @@
             <div class="col-md-3 col-sm-6 mb-4 mt-4">
                 <div class="card">
                     <img id="c3img"
-                        src="://www.httpsnation.co.ke/image/view/-/2009896/highRes/588085/-/k4g4r9z/-/Nyeri_pic.jpg"
-                        class="card-img-top" alt="...">
+                        src="./images/default.png"
+                        class="card-img-top" alt="default image">
                     <hr class="" style="background: purple">
                     <div class="card-body">
                         <h2 class="card-title text-primary" id="c3date"></h2>
@@ -92,17 +96,19 @@
 
         </div>
     </div>
-    <footer>
+    <footer class="fixed-bottom">
         <div class="container text-center mt-3">
             <div class="row text-white">
                 <div class="col">
-                    <p>Coded with <i class="fa fa-heart text-danger"></i> by <a class=""
+                    <p>Coded with <i class="fa fa-heart"></i> by <a class=""
                             href="https://erickarugu32.github.io">Eric K </a></p>
                 </div>
                 <div class="col">
                     <a href="https://github.com/erickarugu32"><i class="fa fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/eric-karugu-904569145/"><i
-                            class="fa fa-linkedin ml-4 mr-4"></i></a>
+                            class="fa fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/eric-karugu-904569145/"><i
+                            class="fa fa-globe"></i></a>
                     <a href="https://twitter.com/karugu_eric"><i class="fa fa-twitter"></i></a>
 
                 </div>
@@ -115,7 +121,7 @@
     </footer>
 
 
-    <script src="script.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -125,6 +131,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
 </body>
 
