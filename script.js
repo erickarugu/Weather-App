@@ -1,6 +1,7 @@
 'use strict';
 const cityInput = document.getElementById('city');
 const searchIcon = document.getElementById('search');
+const displayError = document.getElementById('error');
 const loader = document.getElementById('loader');
 const forecastContent = document.getElementById('forecast');
 
@@ -14,12 +15,23 @@ cityInput.addEventListener('keyup', function (e) {
     }
 });
 
-function getCityData(city) {
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=96dea4748c706dbd239acaf5fccee21a&units=imperial`)
-        .then(data => {
-            return data.json();
-        }).then(displayCityWeather)
-        .then(loader.classList.remove('hidden'));
+async function getCityData(city) {
+    try{
+        loader.classList.remove('hidden')
+        const {data} = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=96dea4748c706dbd239acaf5fccee21a&units=imperial`);
+        if(data){
+            displayError.innerHTML = "";
+            displayCityWeather(data);
+            forecastContent.classList.remove('hidden')
+        }
+        loader.classList.add('hidden');
+    }catch(error){
+        // console.log(error.name);
+        (error.message === "Network Error" || error.name === "ReferenceError") 
+        ? displayError.innerHTML = `Please Check Your Internet Connection <i class="fa fa-internet-explorer" aria-hidden="true"></i>` 
+        :  displayError.innerHTML = `Unknown City: "${city}". Please Check and Try Again <i class="fa fa-exclamation-circle" aria-hidden="true"></i>`;
+        loader.classList.add('hidden');
+    }
 
 }
 
@@ -43,6 +55,7 @@ function displayCityWeather(data) {
     var c3tmp_min = document.getElementById('c3tmp_min');
     var c3tmp_max = document.getElementById('c3tmp_max');
     var c3weather = document.getElementById('c3weather');
+    
 
     //today
     location.innerHTML = data.city.name + ", " + data.city.country;
@@ -94,7 +107,4 @@ function displayCityWeather(data) {
     c3tmp_min.innerHTML = "Min: " + ((parseInt(data.list[24].main.temp_min) - 32) * (5 / 6)).toFixed(2) + " &deg;C";
     c3tmp_max.innerHTML = "Max: " + ((parseInt(data.list[24].main.temp_max) - 32) * (5 / 6)).toFixed(2) + " &deg;C";
     c3weather.innerHTML = data.list[24].weather[0].main + ": " + data.list[24].weather[0].description;
-
-    loader.classList.add('hidden');
-    forecastContent.classList.remove('hidden');
 };
