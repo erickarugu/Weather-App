@@ -17,4 +17,4 @@ https://api.openweathermap.org/data
  
  ### Live
  A live version of the project is available here:
-  - [Weather App](https:/erickarugu.github.io/Weather-App)
+  - [Weather App](https://erickarugu.github.io/Weather-App)
