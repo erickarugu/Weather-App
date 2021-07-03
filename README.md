@@ -3,6 +3,8 @@
 A sample dynamic weather app created using Vanilla Javascript. 
 The app utilizes the weather API allowing one to search for any city and get current weather data and three days forecast.  
 
+![Screen Shot 2021-07-03 at 20 05 43](https://user-images.githubusercontent.com/26389470/124361867-26142380-dc3a-11eb-83ee-8dc211a16314.png)
+
 ### Data: 
 https://api.openweathermap.org/data
 
